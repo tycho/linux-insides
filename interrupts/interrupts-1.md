@@ -124,7 +124,7 @@ If more than one exception or interrupt are occured in the same time, the proces
 +--------------+-------------------------------------------------+
 ```
 
-Now we know a little about different types of the interrupts and exceptions, it means that it is time to move on to a more practical part. We start with the description of the `Interrupt Descriptor Table`. I already wrote above that `IDT` stores entry points of the interrupts and exceptions handlers. The `IDT` is similar by structure to the `Global Descriptior Table` which we saw in the second part of the [Kernel booting process](http://0xax.gitbooks.io/linux-insides/content/Booting/linux-bootstrap-2.html). But of course it has some differences. Instead of `descriptors`, the `IDT` entries are called `gates`. It can contain one of the following gates:
+Now we know a little about different types of the interrupts and exceptions, it means that it is time to move on to a more practical part. We start with the description of the `Interrupt Descriptor Table`. I already wrote above that `IDT` stores entry points of the interrupts and exception handlers. The `IDT` is similar in structure to the `Global Descriptior Table`  we saw in the second part of the [Kernel booting process](http://0xax.gitbooks.io/linux-insides/content/Booting/linux-bootstrap-2.html). But of course it has some differences. Instead of `descriptors`, the `IDT` entries are called `gates`. It can contain one of the following gates:
 
 * interrupt gates;
 * task gates;
